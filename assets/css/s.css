@@ -1,0 +1,175 @@
+/*=========================================
+BLOSSOM BOUTIQUE
+ANIMATIONS.CSS
+==========================================*/
+
+/* Smooth animation */
+
+*{
+    transition:all .3s ease;
+}
+
+/* Fade In */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Slide Left */
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* Slide Right */
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* Zoom */
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* Hero */
+
+.hero-content{
+
+    animation:slideLeft 1s ease;
+
+}
+
+.hero-image{
+
+    animation:slideRight 1s ease;
+
+}
+
+.hero-image img{
+
+    animation:floating 6s infinite ease-in-out;
+
+}
+
+/* Section Titles */
+
+.section-title{
+
+    animation:fadeIn 1s ease;
+
+}
+
+/* Cards */
+
+.category-card,
+.product-card,
+.feature-box,
+.testimonial-card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+/* Hover Effects */
+
+.category-card:hover,
+.product-card:hover,
+.feature-box:hover,
+.testimonial-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* Buttons */
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.btn:hover,
+.category-btn:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+}
+
+/* Footer */
+
+footer{
+
+    animation:fadeIn 1.2s ease;
+
+}
+
+/* Images */
+
+img{
+
+    transition:transform .4s ease;
+
+}
+
+img:hover{
+
+    transform:scale(1.03);
+
+}
